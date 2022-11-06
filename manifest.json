@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+
+  "name": "codoro",
+  "version": "1.1",
+
+  "content_scripts": [ {
+   "css": [ "css/youtube.css" ],
+    "js": [ "js/0.js" ],
+   "matches": [ "*://youtube.com/*","*://*.youtube.com/*"]
+} ],
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "storage",
+    "tabs"
+  ],
+  "action":{
+    "default_popup":"index.html"
+  }
+
+}
